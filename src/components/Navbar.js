@@ -55,7 +55,7 @@ export default function Navbar(props) {
               >
                 <li tabIndex={0}>
                   <details>
-                    <summary className="text-md">Popular</summary>
+                    <summary className="text-md">Recent</summary>
                     <ul className="p-2" id="ul">
                       {itemList.map((item) => (
                         <li>
@@ -109,7 +109,7 @@ export default function Navbar(props) {
             <ul className="menu menu-horizontal p-0">
               <li tabIndex={0}>
                 <details>
-                  <summary className="text-lg">Popular</summary>
+                  <summary className="text-lg">Recent</summary>
                   <ul className="p-2" id="ul">
                     {itemList.map((item, i = 0) => (
                       <li key={i++}>
