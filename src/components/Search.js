@@ -17,7 +17,7 @@ const Search = () => {
   return (
     <div>
         <div
-          className="container md:flex-row  flex justify-center gap-1.5 mt-8 items-center mx-auto  rounded-lg "
+          className="container md:flex-row rounded-3xl w-fit border flex justify-center mt-8 items-center mx-auto   "
           x-data="{ search: '' }"
         >
          
@@ -25,7 +25,7 @@ const Search = () => {
             name="search"
               type="search"
               size={125}
-              className=" border-2  bg-transparent rounded-lg md:w-fit w-60 px-4 py-1.5 text-left text-slate-500  focus:outline-none"
+              className="  bg-transparent rounded-l-3xl md:w-fit w-60 px-4 py-1.5 text-left text-slate-500  focus:outline-none"
               placeholder="Search here.."
          
               
@@ -34,7 +34,7 @@ const Search = () => {
         <button
               type="submit"
               onClick={handlesearch}
-              className="flex items-center bg-blue-500 justify-center w-20 h-10 text-white rounded-lg"
+              className="flex items-center bg-blue-500 justify-center w-20 h-9 text-white rounded-r-3xl"
             >  Search</button>
             {/* <FontAwesomeIcon icon={faMagnifyingGlass} /> */}
       </div>
