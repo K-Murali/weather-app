@@ -31,9 +31,9 @@ const Card = (props) => {
               <h2 className=" font-semibold   text-left text-4xl">
                 {day.maxtemp_c}°c
               </h2>
-              <p className="mt-3  justify-between text-lg">
+              <div className="mt-3  justify-between text-lg">
                 Feels like&nbsp; <div className=" font-semibold">{day.avgtemp_c}°</div>
-              </p>
+              </div>
             </div>
           </div>
           <p className=" text-left mx-4 mb-1 text-md">

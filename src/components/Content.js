@@ -3,12 +3,12 @@ import Card from './Card'
 import { Context } from '../Api/context';
 
 const Content = () => {
-  const { weatherinfo,city,loading,setloading,setweatherinfo } = useContext(Context);
+  const { weatherinfo,city,loading,setloading} = useContext(Context);
   
    useEffect(() => {
-    
+       console.log("city changed "+city)
      setloading(false)
-   }, [weatherinfo,city]);
+   }, [city]);
      return (
       weatherinfo&&!loading&&
     <div className='container block mt-5 mx-auto'>

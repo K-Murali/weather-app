@@ -112,7 +112,7 @@ export default function Navbar(props) {
                   <summary className="text-lg">Recent</summary>
                   <ul className="p-2" id="ul">
                     {itemList.map((item, i = 0) => (
-                      <li key={i++}>
+                      <li key={++i}>
                         <button onClick={() => setcity(`${item}`)}>
                           {item}
                         </button>

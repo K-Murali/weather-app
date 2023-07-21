@@ -1,6 +1,5 @@
 import React, { createContext, useState, useEffect } from "react";
 import {fetchdata} from './api' 
-import { faL } from "@fortawesome/free-solid-svg-icons";
 
 export const Context = createContext();
 
@@ -11,12 +10,13 @@ export const AppDataProvider = (props) => {
   const [itemList, setItemList] = useState([]);
 
   useEffect(() => {
+    console.log("fetched "+city)
     fetch_category_data(city);
   }, [city]);
 
   const fetch_category_data = async(query) => {
     setloading(true);
-   await fetchdata(`${query}&days=5`).then((contents) => {
+   await fetchdata(`${query}&days=3`).then((contents) => {
       setweatherinfo(contents);
       setloading(false)
     });
